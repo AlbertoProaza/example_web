@@ -152,5 +152,38 @@
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "foreign_landing_url": "https://www.rawpixel.com/image/5949527/free-public-domain-cc0-photo",
     "source": "rawpixel"
+  },
+  "about": {
+    "src": "assets/img/about.jpg",
+    "title": "Museum Exhibitions: Old State House-Ship Model Cases by Phil Manker",
+    "creator": "Phil Manker",
+    "creator_url": "https://www.flickr.com/photos/33820070@N04",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/33820070@N04/3425159766",
+    "source": "flickr"
+  },
+  "about2": {
+    "src": "assets/img/about2.jpg",
+    "title": "Grand Canyon Lodge North Rim 0194",
+    "creator": "Grand Canyon NPS",
+    "creator_url": "https://www.flickr.com/photos/50693818@N08",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/50693818@N08/5572289656",
+    "source": "flickr"
+  },
+  "about3": {
+    "src": "assets/img/about3.jpg",
+    "title": "Still Items",
+    "creator": "Jazmin Quaynor",
+    "creator_url": "https://stocksnap.io/author/32861",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/still-items-7WLCWJ9F1J",
+    "source": "stocksnap"
   }
 }
