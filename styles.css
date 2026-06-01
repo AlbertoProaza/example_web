@@ -553,34 +553,17 @@ address { font-style: normal; }
   grid-template-columns: 1fr;
   gap: 2rem;
 }
-/* Horizontal scroll mode — applied via JS on desktop */
-.products-grid.is-horizontal {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 1.5rem;
-  will-change: transform;
-  padding-inline: var(--gutter);
-}
-.products-grid.is-horizontal .product-card {
-  flex: 0 0 clamp(280px, 28vw, 380px);
-  width:  clamp(280px, 28vw, 380px);
-}
-/* Container for horizontal scroll — clips overflow */
-.products-scroll-wrap {
-  overflow: hidden;
-  margin-inline: calc(-1 * var(--gutter));
-}
 .product-card {
   background: var(--bg);
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(26,20,16,.05);
-  transition: transform .6s var(--ease-out), box-shadow .6s var(--ease-out);
+  transition: transform .4s var(--ease-out), box-shadow .4s var(--ease-out);
   cursor: default;
 }
 .product-card:hover {
-  transform: scale(1.025);
-  box-shadow: 0 12px 48px rgba(139,94,60,.10), 0 4px 16px rgba(26,20,16,.05);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(139,94,60,.13), 0 4px 16px rgba(26,20,16,.06);
 }
 .product-img-wrap {
   position: relative;
