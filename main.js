@@ -51,9 +51,7 @@
   function initNav() {
     var nav = $("#nav");
     if (!nav) return;
-    function onScroll() {
-      nav.classList.toggle("is-scrolled", window.scrollY > 32);
-    }
+    function onScroll() { nav.classList.toggle("is-scrolled", window.scrollY > 32); }
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
 
@@ -92,12 +90,9 @@
     var sub = $(".hero-sub");
     var actions = $(".hero-actions");
 
-    /* Split each line into word spans */
     lines.forEach(function (line) {
-      var text = line.innerHTML;
-      /* Wrap words but preserve <em> tags */
-      var wrapped = text.replace(/(<em>[^<]*<\/em>|[^\s<]+)/g, function (match) {
-        return '<span class="word-wrap"><span class="word-inner">' + match + '</span></span>';
+      var wrapped = line.innerHTML.replace(/(<em>[^<]*<\/em>|[^\s<]+)/g, function (m) {
+        return '<span class="word-wrap"><span class="word-inner">' + m + '</span></span>';
       });
       line.innerHTML = wrapped;
       line.style.opacity = "1";
@@ -105,15 +100,12 @@
     });
 
     if (!window.gsap) return;
-
     var tl = gsap.timeline({ delay: 0.2 });
 
     if (kicker) {
-      kicker.style.opacity = "0";
-      kicker.style.transform = "translateY(16px)";
+      kicker.style.opacity = "0"; kicker.style.transform = "translateY(16px)";
       tl.to(kicker, { opacity: 1, y: 0, duration: 0.6, ease: "power3.out" }, 0);
     }
-
     lines.forEach(function (line, i) {
       var words = $$(".word-inner", line);
       words.forEach(function (w) {
@@ -121,29 +113,16 @@
         w.style.transform = "translateY(100%) rotateX(-40deg)";
         w.style.opacity = "0";
       });
-      tl.to(words, {
-        y: 0, rotateX: 0, opacity: 1,
-        duration: 0.75, ease: "power3.out",
-        stagger: 0.07,
-        transformOrigin: "50% 50%"
-      }, 0.15 + i * 0.1);
+      tl.to(words, { y: 0, rotateX: 0, opacity: 1, duration: 0.75, ease: "power3.out", stagger: 0.07 }, 0.15 + i * 0.1);
     });
-
-    if (sub) {
-      sub.style.opacity = "0"; sub.style.transform = "translateY(20px)";
-      tl.to(sub, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 0.55);
-    }
-    if (actions) {
-      actions.style.opacity = "0"; actions.style.transform = "translateY(20px)";
-      tl.to(actions, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 0.7);
-    }
+    if (sub)     { sub.style.opacity = "0"; sub.style.transform = "translateY(20px)"; tl.to(sub, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 0.55); }
+    if (actions) { actions.style.opacity = "0"; actions.style.transform = "translateY(20px)"; tl.to(actions, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 0.7); }
   }
 
-  /* ── Hero title morph on hover ───────────────────── */
+  /* ── Hero title morph on mouseenter ─────────────── */
   function initTitleMorph() {
     var title = $(".hero-title");
     if (!title) return;
-
     var phrases = [
       ["El espacio que", "<em>mereces</em> vivir."],
       ["Tu hogar,", "<em>rediseñado.</em>"],
@@ -152,45 +131,31 @@
     ];
     var current = 0;
     var animating = false;
-    var CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
     function scrambleTo(lines, onDone) {
       var lineEls = $$(".hero-line", title);
-      var total = lines.length;
       var done = 0;
-
       lineEls.forEach(function (el, i) {
         var target = lines[i] || "";
-        /* Strip tags to get plain target */
         var plain = target.replace(/<[^>]+>/g, "");
         var orig = el.textContent;
         var maxLen = Math.max(orig.length, plain.length);
-        var frame = 0;
-        var FRAMES = 14;
-
+        var frame = 0; var FRAMES = 14;
         var raf = setInterval(function () {
           frame++;
           var progress = frame / FRAMES;
           var result = "";
           for (var c = 0; c < maxLen; c++) {
-            if (c < plain.length * progress) {
-              result += plain[c];
-            } else {
-              result += CHARS[Math.floor(Math.random() * CHARS.length)];
-            }
+            result += c < plain.length * progress ? plain[c] : CHARS[Math.floor(Math.random() * CHARS.length)];
           }
           el.textContent = result;
-          if (frame >= FRAMES) {
-            clearInterval(raf);
-            el.innerHTML = target; /* restore with tags */
-            done++;
-            if (done === total && onDone) onDone();
-          }
+          if (frame >= FRAMES) { clearInterval(raf); el.innerHTML = target; done++; if (done === lines.length && onDone) onDone(); }
         }, 30);
       });
     }
 
-    title.addEventListener("mouseover", function () {
+    title.addEventListener("mouseenter", function () {
       if (!fineHover || animating) return;
       animating = true;
       current = (current + 1) % phrases.length;
@@ -198,227 +163,209 @@
     });
   }
 
-  /* ── Hero parallax ────────────────────────────────── */
-  function initHeroParallax() {
+  /* ── Hero zoom-out + content parallax on scroll ──── */
+  function initHeroScrollFx() {
     var heroImg = $(".hero-img");
     var heroContent = $(".hero-content");
+    var heroLine = $(".hero-scroll-line");
     if (!heroImg) return;
 
     window.addEventListener("scroll", function () {
       var sy = window.scrollY;
-      if (sy > window.innerHeight * 1.2) return;
-      heroImg.style.transform     = "translate3d(0," + (sy * 0.38) + "px,0)";
-      if (heroContent) heroContent.style.transform = "translate3d(0," + (sy * 0.12) + "px,0)";
+      var vh = window.innerHeight;
+      if (sy > vh * 1.2) return;
+      var p = sy / vh;
+      /* Image: zoom out + translate down */
+      heroImg.style.transform = "translate3d(0," + (sy * 0.38) + "px,0) scale(" + (1.08 - p * 0.08) + ")";
+      if (heroContent) heroContent.style.transform = "translate3d(0," + (sy * 0.14) + "px,0)";
+      if (heroLine) heroLine.style.opacity = String(Math.max(0, 0.6 - p * 1.2));
     }, { passive: true });
   }
 
-  /* ── Scroll reveals with 3D perspective ──────────── */
-  function initReveals3D() {
-    var targets = $$(".reveal-fade, .reveal-up, .reveal-line");
-    if (!targets.length) return;
+  /* ── GSAP: horizontal pinned product scroll ───────── */
+  function initHorizontalProducts() {
+    if (!window.gsap || !window.ScrollTrigger) return;
+    if (window.innerWidth < 960) return; /* mobile: keep normal grid */
 
-    /* Add perspective to parent sections */
-    $$("section, .stats, .footer").forEach(function (s) {
-      s.style.perspective = "1200px";
+    var section = $(".products");
+    var grid    = $(".products-grid");
+    if (!section || !grid) return;
+
+    /* Wrap grid in clip container */
+    var wrap = document.createElement("div");
+    wrap.className = "products-scroll-wrap";
+    grid.parentNode.insertBefore(wrap, grid);
+    wrap.appendChild(grid);
+
+    /* Switch to horizontal layout */
+    grid.classList.add("is-horizontal");
+
+    /* Remove stagger delays set by CSS (interfere with GSAP) */
+    $$(".product-card", grid).forEach(function (c) { c.style.transitionDelay = "0s"; });
+
+    /* Animate each card in via GSAP as they enter the horizontal viewport */
+    $$(".product-card", grid).forEach(function (card, i) {
+      gsap.fromTo(card,
+        { y: 40, opacity: 0, scale: 0.92 },
+        { y: 0, opacity: 1, scale: 1, duration: 0.7, ease: "power3.out",
+          scrollTrigger: { trigger: card, containerAnimation: ScrollTrigger.getById("hscroll"), start: "left 85%", once: true }
+        }
+      );
     });
 
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          e.target.classList.add("is-visible");
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.05, rootMargin: "0px 0px -2% 0px" });
+    /* Horizontal scroll */
+    var distance = grid.scrollWidth - window.innerWidth + parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--gutter")) * 2;
 
-    targets.forEach(function (el) { io.observe(el); });
-
-    setTimeout(function () {
-      targets.forEach(function (el) { el.classList.add("is-visible"); });
-    }, 6000);
+    gsap.to(grid, {
+      x: () => -distance,
+      ease: "none",
+      scrollTrigger: {
+        id: "hscroll",
+        trigger: section,
+        pin: true,
+        scrub: 1.2,
+        end: () => "+=" + distance,
+        invalidateOnRefresh: true
+      }
+    });
   }
 
-  /* ── GSAP scroll-driven 3D section reveals ────────── */
-  function initScrollTrigger3D() {
+  /* ── GSAP: zoom-scale section entrances ──────────── */
+  function initScrollZoom() {
     if (!window.gsap || !window.ScrollTrigger) return;
-    gsap.registerPlugin(ScrollTrigger);
 
-    /* Section headers fly in with slight rotateX */
-    $$(".section-header, .about-text, .contact-info").forEach(function (el) {
-      gsap.fromTo(el,
-        { y: 60, rotateX: 12, opacity: 0, transformOrigin: "50% 0%" },
+    /* Each section zooms up from slightly small */
+    $$(".about, .features, .gallery, .testimonials, .contact").forEach(function (section) {
+      gsap.fromTo(section,
+        { scale: 0.96, opacity: 0.4 },
         {
-          y: 0, rotateX: 0, opacity: 1, duration: 1,
-          ease: "power3.out",
+          scale: 1, opacity: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: section,
+            start: "top 92%",
+            end: "top 40%",
+            scrub: 0.8
+          }
+        }
+      );
+    });
+
+    /* Stats bar slides up with scale pop */
+    $$(".stat-item").forEach(function (el, i) {
+      gsap.fromTo(el,
+        { y: 50, scale: 0.7, opacity: 0 },
+        { y: 0, scale: 1, opacity: 1, duration: 0.65, ease: "back.out(2)",
+          delay: i * 0.1,
           scrollTrigger: { trigger: el, start: "top 85%", once: true }
         }
       );
     });
 
-    /* Gallery items cascade in with 3D rotation */
+    /* Section headers: slide + rotate into view */
+    $$(".section-header, .about-text, .contact-info").forEach(function (el) {
+      gsap.fromTo(el,
+        { y: 70, rotateX: 14, opacity: 0, transformOrigin: "50% 0%" },
+        { y: 0, rotateX: 0, opacity: 1, duration: 1, ease: "power3.out",
+          scrollTrigger: { trigger: el, start: "top 85%", once: true }
+        }
+      );
+    });
+
+    /* About image: dramatic rotateY entrance */
+    var aboutMedia = $(".about-media");
+    if (aboutMedia) {
+      gsap.fromTo(aboutMedia,
+        { x: 80, rotateY: -14, opacity: 0, transformOrigin: "0% 50%", scale: 0.9 },
+        { x: 0, rotateY: 0, opacity: 1, scale: 1, duration: 1.1, ease: "power3.out",
+          scrollTrigger: { trigger: aboutMedia, start: "top 80%", once: true }
+        }
+      );
+    }
+
+    /* Gallery: alternate left/right + rotateY */
     $$(".gallery-item").forEach(function (el, i) {
+      var dir = i % 2 === 0 ? -60 : 60;
       gsap.fromTo(el,
-        { y: 80, rotateY: i % 2 === 0 ? -8 : 8, opacity: 0, scale: 0.92 },
-        {
-          y: 0, rotateY: 0, opacity: 1, scale: 1,
+        { x: dir * 0.5, y: 50, rotateY: i % 2 === 0 ? -10 : 10, opacity: 0, scale: 0.88 },
+        { x: 0, y: 0, rotateY: 0, opacity: 1, scale: 1,
           duration: 0.9, ease: "power3.out",
-          delay: (i % 3) * 0.1,
+          delay: (i % 3) * 0.09,
           scrollTrigger: { trigger: el, start: "top 88%", once: true }
         }
       );
     });
 
-    /* Testimonial cards flip in */
-    $$(".testimonial-card").forEach(function (el, i) {
-      gsap.fromTo(el,
-        { y: 50, rotateX: -10, opacity: 0, transformOrigin: "50% 100%" },
-        {
-          y: 0, rotateX: 0, opacity: 1, duration: 0.85, ease: "power3.out",
-          delay: i * 0.12,
-          scrollTrigger: { trigger: el, start: "top 88%", once: true }
-        }
-      );
-    });
-
-    /* Feature cards slide in from sides alternating */
+    /* Features: slide from alternating sides */
     $$(".feature-card").forEach(function (el, i) {
-      var dir = i % 2 === 0 ? -40 : 40;
       gsap.fromTo(el,
-        { x: dir, rotateY: i % 2 === 0 ? -6 : 6, opacity: 0 },
-        {
-          x: 0, rotateY: 0, opacity: 1, duration: 0.85, ease: "power3.out",
+        { x: i % 2 === 0 ? -50 : 50, rotateY: i % 2 === 0 ? -8 : 8, opacity: 0 },
+        { x: 0, rotateY: 0, opacity: 1, duration: 0.85, ease: "power3.out",
           delay: i * 0.08,
           scrollTrigger: { trigger: el, start: "top 88%", once: true }
         }
       );
     });
 
-    /* Product cards stagger in with scale + rotate */
-    $$(".product-card").forEach(function (el, i) {
+    /* Testimonials: flip in on X */
+    $$(".testimonial-card").forEach(function (el, i) {
       gsap.fromTo(el,
-        { y: 60, scale: 0.88, rotateX: 6, opacity: 0, transformOrigin: "50% 100%" },
-        {
-          y: 0, scale: 1, rotateX: 0, opacity: 1,
-          duration: 0.9, ease: "back.out(1.4)",
-          delay: (i % 3) * 0.1,
+        { y: 60, rotateX: -12, opacity: 0, scale: 0.92, transformOrigin: "50% 100%" },
+        { y: 0, rotateX: 0, opacity: 1, scale: 1, duration: 0.85, ease: "power3.out",
+          delay: i * 0.12,
           scrollTrigger: { trigger: el, start: "top 88%", once: true }
         }
       );
     });
+  }
 
-    /* About image dramatic entrance */
-    var aboutMedia = $(".about-media");
-    if (aboutMedia) {
-      gsap.fromTo(aboutMedia,
-        { x: 80, rotateY: -12, opacity: 0, transformOrigin: "0% 50%" },
-        {
-          x: 0, rotateY: 0, opacity: 1, duration: 1.1, ease: "power3.out",
-          scrollTrigger: { trigger: aboutMedia, start: "top 80%", once: true }
-        }
-      );
-    }
-
-    /* Stats counter-up with scale pop */
-    $$(".stat-item").forEach(function (el, i) {
-      gsap.fromTo(el,
-        { y: 40, scale: 0.7, opacity: 0 },
-        {
-          y: 0, scale: 1, opacity: 1, duration: 0.7,
-          ease: "back.out(2)",
-          delay: i * 0.1,
-          scrollTrigger: { trigger: el, start: "top 85%", once: true }
+  /* ── GSAP: parallax on images ─────────────────────── */
+  function initImgParallax() {
+    if (!window.gsap || !window.ScrollTrigger) return;
+    $$(".about-img-wrap img, .gallery-item img").forEach(function (img) {
+      gsap.fromTo(img,
+        { y: -25 },
+        { y: 25, ease: "none",
+          scrollTrigger: { trigger: img, start: "top bottom", end: "bottom top", scrub: 1.4 }
         }
       );
     });
   }
 
-  /* ── 3D tilt on cards ─────────────────────────────── */
+  /* ── CSS-only scroll reveals (fallback) ──────────── */
+  function initReveals() {
+    var targets = $$(".reveal-fade, .reveal-up, .reveal-line");
+    if (!targets.length) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("is-visible"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.05, rootMargin: "0px 0px -2% 0px" });
+    targets.forEach(function (el) { io.observe(el); });
+    setTimeout(function () { targets.forEach(function (el) { el.classList.add("is-visible"); }); }, 6000);
+  }
+
+  /* ── 3D tilt on feature + testimonial cards ───────── */
   function initTilt3D() {
     if (!fineHover) return;
-    var cards = $$(".product-card, .feature-card, .testimonial-card");
-
-    cards.forEach(function (card) {
-      var MAX = 10;
-      var rect;
-
+    $$(".feature-card, .testimonial-card").forEach(function (card) {
+      var MAX = 10; var rect;
       card.style.transformStyle = "preserve-3d";
       card.style.transition = "transform 0.1s ease, box-shadow 0.3s ease";
-
-      card.addEventListener("mouseover", function () {
-        rect = card.getBoundingClientRect();
-      });
-
+      card.addEventListener("mouseover", function () { rect = card.getBoundingClientRect(); });
       card.addEventListener("mousemove", function (e) {
         if (!rect) rect = card.getBoundingClientRect();
-        var cx = rect.left + rect.width / 2;
-        var cy = rect.top + rect.height / 2;
-        var dx = (e.clientX - cx) / (rect.width / 2);
-        var dy = (e.clientY - cy) / (rect.height / 2);
-        var rx = -dy * MAX;
-        var ry = dx * MAX;
-        card.style.transform = "perspective(800px) rotateX(" + rx + "deg) rotateY(" + ry + "deg) translateZ(10px) scale(1.02)";
-        card.style.boxShadow = "0 24px 60px rgba(139,94,60," + (0.1 + Math.abs(dx) * 0.08) + ")," +
-          (ry * -1.5) + "px " + (rx * 1.5) + "px 30px rgba(139,94,60,0.08)";
+        var dx = (e.clientX - (rect.left + rect.width / 2)) / (rect.width / 2);
+        var dy = (e.clientY - (rect.top + rect.height / 2)) / (rect.height / 2);
+        card.style.transform = "perspective(800px) rotateX(" + (-dy * MAX) + "deg) rotateY(" + (dx * MAX) + "deg) translateZ(10px) scale(1.02)";
+        card.style.boxShadow = "0 24px 60px rgba(139,94,60," + (0.1 + Math.abs(dx) * 0.08) + ")";
       });
-
       card.addEventListener("mouseleave", function () {
         card.style.transition = "transform 0.5s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s ease";
-        card.style.transform = "perspective(800px) rotateX(0deg) rotateY(0deg) translateZ(0) scale(1)";
+        card.style.transform = "perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)";
         card.style.boxShadow = "";
         rect = null;
       });
-    });
-  }
-
-  /* ── Magnetic buttons ─────────────────────────────── */
-  function initMagneticBtns() {
-    if (!fineHover) return;
-    var btns = $$(".btn-primary, .btn-nav, .btn-outline");
-
-    btns.forEach(function (btn) {
-      var rect;
-      var STRENGTH = 0.3;
-
-      btn.addEventListener("mouseover", function () {
-        rect = btn.getBoundingClientRect();
-        btn.style.transition = "transform 0.1s ease, box-shadow 0.3s ease";
-      });
-
-      btn.addEventListener("mousemove", function (e) {
-        if (!rect) rect = btn.getBoundingClientRect();
-        var cx = rect.left + rect.width / 2;
-        var cy = rect.top + rect.height / 2;
-        var dx = (e.clientX - cx) * STRENGTH;
-        var dy = (e.clientY - cy) * STRENGTH;
-        btn.style.transform = "translate(" + dx + "px," + dy + "px) scale(1.04)";
-      });
-
-      btn.addEventListener("mouseleave", function () {
-        btn.style.transition = "transform 0.5s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s ease, background 0.25s, color 0.25s";
-        btn.style.transform = "";
-        rect = null;
-      });
-    });
-  }
-
-  /* ── Parallax on section images ─────────────────── */
-  function initImgParallax() {
-    if (!window.gsap || !window.ScrollTrigger) return;
-
-    $$(".about-img-wrap img, .gallery-item img").forEach(function (img) {
-      gsap.fromTo(img,
-        { y: -30 },
-        {
-          y: 30,
-          ease: "none",
-          scrollTrigger: {
-            trigger: img,
-            start: "top bottom",
-            end: "bottom top",
-            scrub: 1.2
-          }
-        }
-      );
     });
   }
 
@@ -426,7 +373,6 @@
   function initCounters() {
     var items = $$("[data-count]");
     if (!items.length) return;
-
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (!e.isIntersecting) return;
@@ -436,16 +382,13 @@
         var suffix = el.getAttribute("data-suffix") || "";
         var start = performance.now();
         var DURATION = 1600;
-
         (function step(now) {
           var p = Math.min((now - start) / DURATION, 1);
-          var eased = 1 - Math.pow(1 - p, 3);
-          el.textContent = Math.round(eased * target) + suffix;
+          el.textContent = Math.round((1 - Math.pow(1 - p, 3)) * target) + suffix;
           if (p < 1) requestAnimationFrame(step);
         })(start);
       });
     }, { threshold: 0.05 });
-
     items.forEach(function (el) { io.observe(el); });
   }
 
@@ -465,22 +408,12 @@
     });
   }
 
-  /* ── Scroll-driven number in hero (bonus) ─────────── */
-  function initHeroScrollIndicator() {
-    var line = $(".hero-scroll-line");
-    if (!line) return;
-    window.addEventListener("scroll", function () {
-      var progress = Math.min(window.scrollY / (window.innerHeight * 0.5), 1);
-      line.style.opacity = String(0.6 - progress * 0.6);
-    }, { passive: true });
-  }
-
-  /* ── CSS: word-wrap overflow hidden ─────────────── */
+  /* ── CSS: word-wrap style injection ─────────────── */
   function injectWordWrapStyle() {
     var st = document.createElement("style");
     st.textContent = [
       ".word-wrap{display:inline-block;overflow:hidden;vertical-align:bottom;line-height:1.1;}",
-      ".word-wrap + .word-wrap{margin-left:0.22em;}",
+      ".word-wrap+.word-wrap{margin-left:0.22em;}",
       ".word-inner{display:inline-block;will-change:transform,opacity;perspective:600px;}"
     ].join("");
     document.head.appendChild(st);
@@ -488,23 +421,22 @@
 
   /* ── Boot ─────────────────────────────────────────── */
   function boot() {
-    safe(injectWordWrapStyle,     "injectWordWrapStyle");
-    safe(initCursor,              "initCursor");
-    safe(initNav,                 "initNav");
-    safe(initHeroEntrance,        "initHeroEntrance");
-    safe(initTitleMorph,          "initTitleMorph");
-    safe(initHeroParallax,        "initHeroParallax");
-    safe(initHeroScrollIndicator, "initHeroScrollIndicator");
-    safe(initReveals3D,           "initReveals3D");
-    safe(initCounters,            "initCounters");
-    safe(initTilt3D,              "initTilt3D");
-    safe(initMagneticBtns,        "initMagneticBtns");
-    safe(initContactForm,         "initContactForm");
+    safe(injectWordWrapStyle,  "injectWordWrapStyle");
+    safe(initCursor,           "initCursor");
+    safe(initNav,              "initNav");
+    safe(initHeroEntrance,     "initHeroEntrance");
+    safe(initTitleMorph,       "initTitleMorph");
+    safe(initHeroScrollFx,     "initHeroScrollFx");
+    safe(initReveals,          "initReveals");
+    safe(initCounters,         "initCounters");
+    safe(initTilt3D,           "initTilt3D");
+    safe(initContactForm,      "initContactForm");
 
     if (window.gsap && window.ScrollTrigger) {
       try { gsap.registerPlugin(ScrollTrigger); } catch (_) {}
-      safe(initScrollTrigger3D, "initScrollTrigger3D");
-      safe(initImgParallax,     "initImgParallax");
+      safe(initHorizontalProducts, "initHorizontalProducts");
+      safe(initScrollZoom,         "initScrollZoom");
+      safe(initImgParallax,        "initImgParallax");
     }
 
     document.documentElement.classList.add("is-ready");
