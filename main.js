@@ -335,7 +335,7 @@
   /* ── 3D tilt on cards ─────────────────────────────── */
   function initTilt3D() {
     if (!fineHover) return;
-    var cards = $$(".product-card, .feature-card, .testimonial-card");
+    var cards = $$(".feature-card, .testimonial-card");
 
     cards.forEach(function (card) {
       var MAX = 10;
