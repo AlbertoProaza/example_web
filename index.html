@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roble &amp; Co. — Muebles de Diseño Artesanal</title>
+  <meta name="description" content="Muebles de diseño europeo fabricados a mano con maderas certificadas sostenibles. Sofás, mesas, butacas y dormitorios de alta calidad.">
+  <meta property="og:title" content="Roble &amp; Co. — Muebles de Diseño Artesanal">
+  <meta property="og:description" content="Muebles de diseño europeo fabricados a mano con maderas certificadas sostenibles.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap">
+
+  <link rel="preload" as="image" href="assets/img/hero.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=20260601">
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#colecciones">Saltar al contenido</a>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- ============================
+       NAV
+  ============================= -->
+  <header class="nav" id="nav" role="banner">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Roble &amp; Co. — Inicio">
+        <span class="nav-logo-mark">R</span>
+        <span class="nav-logo-text">Roble <em>&amp;</em> Co.</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#colecciones">Colecciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="#contacto" class="btn btn-nav">Visitar showroom</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav-mobile" role="navigation" aria-label="Menú móvil">
+      <a href="#colecciones">Colecciones</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="btn btn-mobile">Visitar showroom</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================
+         HERO
+    ============================= -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="assets/img/hero.webp" alt="" fetchpriority="high" loading="eager" decoding="sync" class="hero-img">
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-kicker reveal-fade">Muebles de autor · Barcelona</p>
+        <h1 class="hero-title">
+          <span class="hero-line reveal-line">El espacio que</span>
+          <span class="hero-line reveal-line"><em>mereces</em> vivir.</span>
+        </h1>
+        <p class="hero-sub reveal-fade">Diseño artesanal europeo con maderas certificadas.<br>Cada pieza, única. Cada hogar, irrepetible.</p>
+        <div class="hero-actions reveal-fade">
+          <a href="#colecciones" class="btn btn-primary">Descubrir colección</a>
+          <a href="#nosotros" class="btn btn-ghost">Nuestra historia</a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span class="hero-scroll-line"></span>
+        <span class="hero-scroll-label">Explorar</span>
+      </div>
+    </section>
+
+    <!-- ============================
+         STATS
+    ============================= -->
+    <section class="stats" aria-label="Números de Roble &amp; Co.">
+      <div class="container">
+        <div class="stats-grid" data-stats>
+          <div class="stat-item reveal-up">
+            <span class="stat-num" data-count="500" data-suffix="+">500+</span>
+            <span class="stat-label">clientes satisfechos</span>
+          </div>
+          <div class="stat-item reveal-up">
+            <span class="stat-num" data-count="10" data-suffix=" años">10 años</span>
+            <span class="stat-label">de garantía</span>
+          </div>
+          <div class="stat-item reveal-up">
+            <span class="stat-num" data-count="18" data-suffix="">18</span>
+            <span class="stat-label">maderas certificadas</span>
+          </div>
+          <div class="stat-item reveal-up">
+            <span class="stat-num" data-count="100" data-suffix="%">100%</span>
+            <span class="stat-label">fabricación propia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         NOSOTROS
+    ============================= -->
+    <section class="about" id="nosotros" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <p class="section-kicker reveal-fade">Sobre nosotros</p>
+            <h2 id="about-title" class="section-title reveal-up">El mueble que<br><em>dura generaciones.</em></h2>
+            <p class="about-body reveal-up">Nacimos en Barcelona con una convicción: que los muebles deben comprarse una vez. Trabajamos con carpinteros artesanos del norte de España e Italia, eligiendo cada tabla de roble, cada juntura de nogal, con la misma atención que un escultor elige su piedra.</p>
+            <p class="about-body reveal-up">No fabricamos para las tendencias. Fabricamos para el tiempo.</p>
+            <a href="#colecciones" class="about-link reveal-fade">Ver colecciones <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="about-media reveal-up">
+            <div class="about-img-wrap">
+              <img src="assets/img/about.webp" alt="Artesano trabajando madera en el taller de Roble &amp; Co." loading="lazy" decoding="async">
+              <div class="about-badge">
+                <span class="badge-num">15</span>
+                <span class="badge-text">años<br>de oficio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         COLECCIONES DESTACADAS
+    ============================= -->
+    <section class="products" id="colecciones" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-kicker">Colecciones</p>
+          <h2 id="products-title" class="section-title">Piezas <em>destacadas</em></h2>
+          <p class="section-sub">Diseño que nace de la madera, termina en tu hogar.</p>
+        </div>
+        <div class="products-grid" data-products>
+          <!-- Hardcoded for no-JS fallback — JS mounts/enriches if needed -->
+          <article class="product-card reveal-up">
+            <div class="product-img-wrap">
+              <img src="assets/img/product-1.webp" alt="Sofá Arca de roble macizo con tapizado en lino natural" loading="lazy" decoding="async">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Sofá Arca</h3>
+              <p class="product-desc">Estructura de roble macizo, tapizado en lino natural</p>
+              <div class="product-foot">
+                <span class="product-price">2.890 €</span>
+                <a href="#contacto" class="product-cta" aria-label="Consultar sobre Sofá Arca">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal-up">
+            <div class="product-img-wrap">
+              <img src="assets/img/product-2.webp" alt="Mesa Levant de nogal vivo con patas de acero forjado" loading="lazy" decoding="async">
+              <span class="product-badge">Más vendido</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Mesa Levant</h3>
+              <p class="product-desc">Tablero de nogal vivo, patas de acero forjado</p>
+              <div class="product-foot">
+                <span class="product-price">1.650 €</span>
+                <a href="#contacto" class="product-cta" aria-label="Consultar sobre Mesa Levant">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal-up">
+            <div class="product-img-wrap">
+              <img src="assets/img/product-3.webp" alt="Butaca Cala de haya curvada con tejido bouclé arena" loading="lazy" decoding="async">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Butaca Cala</h3>
+              <p class="product-desc">Madera de haya curvada, tejido bouclé arena</p>
+              <div class="product-foot">
+                <span class="product-price">1.190 €</span>
+                <a href="#contacto" class="product-cta" aria-label="Consultar sobre Butaca Cala">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal-up">
+            <div class="product-img-wrap">
+              <img src="assets/img/product-4.webp" alt="Cama Serrat con cabecero de roble y base de listones de fresno" loading="lazy" decoding="async">
+              <span class="product-badge product-badge--accent">Nuevo</span>
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Cama Serrat</h3>
+              <p class="product-desc">Cabecero de roble, base de listones con alma de fresno</p>
+              <div class="product-foot">
+                <span class="product-price">3.200 €</span>
+                <a href="#contacto" class="product-cta" aria-label="Consultar sobre Cama Serrat">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal-up">
+            <div class="product-img-wrap">
+              <img src="assets/img/product-5.webp" alt="Estantería Mura de nogal con módulos combinables" loading="lazy" decoding="async">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Estantería Mura</h3>
+              <p class="product-desc">Módulos de nogal combinables, acabado aceite natural</p>
+              <div class="product-foot">
+                <span class="product-price">980 €</span>
+                <a href="#contacto" class="product-cta" aria-label="Consultar sobre Estantería Mura">Consultar</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal-up">
+            <div class="product-img-wrap">
+              <img src="assets/img/product-6.webp" alt="Mesa de Centro Garbi con tablero de travertino y base de roble torneado" loading="lazy" decoding="async">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Mesa Centro Garbi</h3>
+              <p class="product-desc">Tablero de travertino natural, base de roble torneado</p>
+              <div class="product-foot">
+                <span class="product-price">890 €</span>
+                <a href="#contacto" class="product-cta" aria-label="Consultar sobre Mesa Centro Garbi">Consultar</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="products-cta reveal-fade">
+          <a href="#contacto" class="btn btn-outline">Ver catálogo completo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         POR QUÉ ELEGIRNOS
+    ============================= -->
+    <section class="features" aria-labelledby="features-title">
+      <div class="features-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-kicker">Por qué Roble &amp; Co.</p>
+          <h2 id="features-title" class="section-title">Comprometidos con<br><em>lo que importa.</em></h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 6c-9.941 0-18 8.059-18 18s8.059 18 18 18 18-8.059 18-18S33.941 6 24 6zm0 4a14 14 0 0 1 0 28A14 14 0 0 1 24 10z" fill="currentColor" opacity=".2"/>
+                <path d="M24 10v14l8 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M14 24s3-6 10-6 10 6 10 6-3 6-10 6-10-6-10-6z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Madera sostenible</h3>
+            <p class="feature-body">Trabajamos exclusivamente con maderas certificadas FSC® de bosques gestionados de forma responsable en España y Europa.</p>
+          </div>
+          <div class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 36V18l16-10 16 10v18H8z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M18 36V26h12v10" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M24 8v8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Fabricación artesanal</h3>
+            <p class="feature-body">Cada mueble es construido a mano por nuestros maestros carpinteros. Sin producción en serie. Sin atajos. Solo oficio.</p>
+          </div>
+          <div class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="30" width="36" height="8" rx="2" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M14 30V20a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M10 38l4 4m24-4-4 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Entrega a domicilio</h3>
+            <p class="feature-body">Servicio de entrega y montaje en toda España. Nuestro equipo cuida cada detalle, desde el taller hasta tu salón.</p>
+          </div>
+          <div class="feature-card reveal-up">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 6l4.5 9 9.5 1.5-7 6.5 1.5 9.5L24 28l-8.5 4.5 1.5-9.5-7-6.5L19.5 15 24 6z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M16 40h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Garantía 10 años</h3>
+            <p class="feature-body">Respaldamos cada pieza con diez años de garantía estructural. Si algo falla, lo reparamos o lo reemplazamos. Sin letra pequeña.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         GALERÍA
+    ============================= -->
+    <section class="gallery" id="galeria" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-kicker">Ambientes</p>
+          <h2 id="gallery-title" class="section-title">Espacios que<br><em>inspiran.</em></h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item gallery-item--tall reveal-up">
+            <img src="assets/img/gallery-1.webp" alt="Salón escandinavo con sofá y mesa de madera" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item reveal-up">
+            <img src="assets/img/gallery-2.webp" alt="Interior moderno con muebles de diseño" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item reveal-up">
+            <img src="assets/img/gallery-3.webp" alt="Dormitorio con madera cálida y luz natural" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item gallery-item--wide reveal-up">
+            <img src="assets/img/gallery-4.webp" alt="Comedor elegante con mesa de madera maciza" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item reveal-up">
+            <img src="assets/img/gallery-5.webp" alt="Salón luminoso con sofá de diseño" loading="lazy" decoding="async">
+          </div>
+          <div class="gallery-item reveal-up">
+            <img src="assets/img/gallery-6.webp" alt="Rincón acogedor con muebles de madera" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         TESTIMONIOS
+    ============================= -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <p class="section-kicker">Testimonios</p>
+          <h2 id="testimonials-title" class="section-title">Lo que dicen<br><em>nuestros clientes.</em></h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal-up">
+            <div class="testimonial-quote-mark" aria-hidden="true">"</div>
+            <blockquote class="testimonial-text">
+              Compramos el sofá Arca hace dos años y sigue impecable. La atención fue exquisita y el equipo nos asesoró con una paciencia admirable. Sin duda volvemos.
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">C</div>
+              <div>
+                <strong class="testimonial-name">Cristina Valls</strong>
+                <span class="testimonial-city">Barcelona</span>
+              </div>
+            </footer>
+          </div>
+          <div class="testimonial-card reveal-up">
+            <div class="testimonial-quote-mark" aria-hidden="true">"</div>
+            <blockquote class="testimonial-text">
+              La mesa de comedor supera todas las expectativas. La madera tiene una calidez que no he visto en ninguna otra tienda. Vale cada euro y más.
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">M</div>
+              <div>
+                <strong class="testimonial-name">Marco Fernández</strong>
+                <span class="testimonial-city">Madrid</span>
+              </div>
+            </footer>
+          </div>
+          <div class="testimonial-card reveal-up">
+            <div class="testimonial-quote-mark" aria-hidden="true">"</div>
+            <blockquote class="testimonial-text">
+              Reformamos nuestra casa con muebles de Roble &amp; Co. y quedamos completamente enamorados. Calidad, diseño y un servicio de entrega impecable.
+            </blockquote>
+            <footer class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">L</div>
+              <div>
+                <strong class="testimonial-name">Laura Solé</strong>
+                <span class="testimonial-city">Valencia</span>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================
+         CONTACTO / SHOWROOM
+    ============================= -->
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal-up">
+            <p class="section-kicker">Showroom &amp; Contacto</p>
+            <h2 id="contact-title" class="section-title">Ven a<br><em>conocernos.</em></h2>
+            <p class="contact-intro">Nuestro showroom en Barcelona está abierto para que puedas ver, tocar y sentir cada pieza antes de elegir. Sin presión. Solo buen café y buena madera.</p>
+            <ul class="contact-details">
+              <li>
+                <span class="contact-icon" aria-hidden="true">📍</span>
+                <span>Carrer del Consell de Cent, 248<br>08011 Barcelona</span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">🕐</span>
+                <span>Lun – Vie 10:00 – 19:00<br>Sáb 10:00 – 14:00</span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">✉</span>
+                <a href="mailto:hola@robleco.es">hola@robleco.es</a>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">☎</span>
+                <a href="tel:+34934567890">+34 93 456 78 90</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-form-wrap reveal-up">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <label for="cf-name" class="form-label">Nombre</label>
+                <input type="text" id="cf-name" name="name" class="form-input" placeholder="Tu nombre" required autocomplete="name">
+              </div>
+              <div class="form-row">
+                <label for="cf-email" class="form-label">Email</label>
+                <input type="email" id="cf-email" name="email" class="form-input" placeholder="tu@email.com" required autocomplete="email">
+              </div>
+              <div class="form-row">
+                <label for="cf-interest" class="form-label">Me interesa</label>
+                <select id="cf-interest" name="interest" class="form-input form-select">
+                  <option value="">Seleccionar colección…</option>
+                  <option value="sofa">Sofás</option>
+                  <option value="mesa">Mesas</option>
+                  <option value="butaca">Butacas</option>
+                  <option value="dormitorio">Dormitorio</option>
+                  <option value="otro">Consulta general</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="cf-message" class="form-label">Mensaje</label>
+                <textarea id="cf-message" name="message" class="form-input form-textarea" placeholder="Cuéntanos sobre tu proyecto o espacio…" rows="4"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-form">
+                <span class="btn-text">Enviar consulta</span>
+                <span class="btn-sending" aria-hidden="true">Enviando…</span>
+                <span class="btn-sent" aria-hidden="true">✓ Enviado</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================
+       FOOTER
+  ============================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo" aria-label="Roble &amp; Co. — Inicio">
+            <span class="nav-logo-mark">R</span>
+            <span>Roble <em>&amp;</em> Co.</span>
+          </a>
+          <p class="footer-tagline">Muebles de diseño artesanal europeo.<br>Barcelona desde 2010.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram de Roble &amp; Co." rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Pinterest de Roble &amp; Co." rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.236 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.598-.299-1.482c0-1.388.806-2.428 1.808-2.428.853 0 1.267.641 1.267 1.408 0 .858-.546 2.141-.828 3.329-.236.995.498 1.806 1.476 1.806 1.771 0 3.133-1.868 3.133-4.566 0-2.386-1.716-4.054-4.165-4.054-2.837 0-4.5 2.128-4.5 4.328 0 .857.33 1.776.741 2.278a.3.3 0 0 1 .069.286c-.076.313-.243.995-.276 1.134-.044.183-.145.222-.334.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.967-.527-2.292-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Houzz de Roble &amp; Co." rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 3L4 8v13h6v-6h4v6h6V8L12 3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-nav-title">Colecciones</h4>
+          <ul>
+            <li><a href="#colecciones">Sofás</a></li>
+            <li><a href="#colecciones">Mesas</a></li>
+            <li><a href="#colecciones">Butacas</a></li>
+            <li><a href="#colecciones">Dormitorio</a></li>
+            <li><a href="#colecciones">Estanterías</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-nav-title">Empresa</h4>
+          <ul>
+            <li><a href="#nosotros">Sobre nosotros</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Showroom</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="creditos.html">Créditos fotográficos</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-block">
+          <h4 class="footer-nav-title">Showroom Barcelona</h4>
+          <address>
+            Carrer del Consell de Cent, 248<br>
+            08011 Barcelona<br>
+            <a href="tel:+34934567890">+34 93 456 78 90</a><br>
+            <a href="mailto:hola@robleco.es">hola@robleco.es</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Roble &amp; Co. Todos los derechos reservados.</p>
+        <p class="footer-credits-link">
+          Imágenes bajo Creative Commons. <a href="creditos.html">Créditos fotográficos →</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts — defer, in dependency order -->
+  <script defer src="lib/gsap.min.js?v=20260601"></script>
+  <script defer src="lib/ScrollTrigger.min.js?v=20260601"></script>
+  <script defer src="lib/manifest.js?v=20260601"></script>
+  <script defer src="main.js?v=20260601"></script>
+</body>
+</html>

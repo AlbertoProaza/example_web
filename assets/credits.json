@@ -1,0 +1,156 @@
+{
+  "hero": {
+    "src": "assets/img/hero.jpg",
+    "title": "Residence 38 was decorated celebrated",
+    "creator": "Kelly Ishmael",
+    "creator_url": "https://mindingmynest.com",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.rawpixel.com/image/6083079/photo-image-public-domain-living-room",
+    "source": "rawpixel"
+  },
+  "about": {
+    "src": "assets/img/about.jpg",
+    "title": "A person is carefully fitting a wooden leg into the frame of furniture in a workshop",
+    "creator": "Shixart1985",
+    "creator_url": "https://commons.wikimedia.org/wiki/User:Shixart1985",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=190519449",
+    "source": "wikimedia"
+  },
+  "product-1": {
+    "src": "assets/img/product-1.jpg",
+    "title": "Roman Dining Couch (lectus) made of wood with bronze adornments 1st century BCE",
+    "creator": "mharrsch",
+    "creator_url": "https://www.flickr.com/photos/44124324682@N01",
+    "license": "by-nc-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/44124324682@N01/1228684",
+    "source": "flickr"
+  },
+  "product-2": {
+    "src": "assets/img/product-2.jpg",
+    "title": "New Testament parable (Luke 15:11-32):",
+    "creator": "Michael Gaylard from Horsham, UK",
+    "creator_url": "https://www.flickr.com/people/16564965@N04",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.rawpixel.com/image/7653471/image-light-vintage-art",
+    "source": "rawpixel"
+  },
+  "product-3": {
+    "src": "assets/img/product-3.jpg",
+    "title": "'Grasshopper' Highback Armchair",
+    "creator": "Eero Saarinen",
+    "creator_url": "{\"result_count\":8,\"page_count\":2,\"page_size\":6,\"page\":1,\"results\":[{\"id\":\"d1f9e608-6d36-487b-9983-a003a545b5a9\",\"title\":\"Armchair collage element, vintage furniture\",\"indexed_on\":\"2022-11-01T00:40:37.771722Z\",\"foreign_landing_url\":\"https://www.rawpixel.com/image/6315076/vector-vintage-public-domain-blue\",\"url\":\"https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvam9iNjcwLTAwMjEtdi1sMWJpenRxZi5qcGc.jpg\",\"creator\":null,\"creator_url\":null,\"license\":\"cc0\",\"license_version\":\"1.0\",\"license_url\":\"https://creativecommons.org/publicdomain/zero/1.0/\",\"provider\":\"rawpixel\",\"source\":\"rawpixel\",\"category\":\"illustration\",\"filesize\":null,\"filetype\":\"eps\",\"tags\":[{\"name\":\"armchair\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"art decorative\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"blue\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"chair\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"furniture\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"interior design sketch\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"old chair\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"retro home illustration\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"vintage\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"vintage decorative vector\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"}],\"attribution\":\"\\\"Armchair collage element, vintage furniture\\\" is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.\",\"fields_matched\":[\"description\",\"title\",\"tags.name\"],\"mature\":false,\"height\":5001,\"width\":5000,\"thumbnail\":\"https://api.openverse.org/v1/images/d1f9e608-6d36-487b-9983-a003a545b5a9/thumb/\",\"detail_url\":\"https://api.openverse.org/v1/images/d1f9e608-6d36-487b-9983-a003a545b5a9/\",\"related_url\":\"https://api.openverse.org/v1/images/d1f9e608-6d36-487b-9983-a003a545b5a9/related/\",\"unstable__sensitivity\":[]},{\"id\":\"e3a834d6-67ce-44a5-b00b-6e7db97721a8\",\"title\":\"Tulip Armchair, Model No. 150\",\"indexed_on\":\"2019-05-28T11:45:03.107587Z\",\"foreign_landing_url\":\"https://www.brooklynmuseum.org/opencollection/objects/1588\",\"url\":\"https://d1lfxha3ugu3d4.cloudfront.net/images/opencollection/objects/size4/78.128.7_view1_IMLS_SL2.jpg\",\"creator\":\"Eero Saarinen\",\"creator_url\":null,\"license\":\"by\",\"license_version\":\"3.0\",\"license_url\":\"https://creativecommons.org/licenses/by/3.0/\",\"provider\":\"brooklynmuseum\",\"source\":\"brooklynmuseum\",\"category\":\"digitized_artwork\",\"filesize\":null,\"filetype\":\"jpg\",\"tags\":[{\"name\":\"20th Century\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Atomic Age design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"born Finland\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"chair\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"decor\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"elegant\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"fiberglass\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"furnishing\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Furniture\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"home\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"IMLS\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"industrial design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"interior design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"new york\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"post-war design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"red\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Saarinen\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"seating\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Tulip chair\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"white\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"}],\"attribution\":\"\\\"Tulip Armchair, Model No. 150\\\" by Eero Saarinen is licensed under CC BY 3.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/3.0/.\",\"fields_matched\":[\"description\",\"title\",\"tags.name\"],\"mature\":false,\"height\":1536,\"width\":1178,\"thumbnail\":\"https://api.openverse.org/v1/images/e3a834d6-67ce-44a5-b00b-6e7db97721a8/thumb/\",\"detail_url\":\"https://api.openverse.org/v1/images/e3a834d6-67ce-44a5-b00b-6e7db97721a8/\",\"related_url\":\"https://api.openverse.org/v1/images/e3a834d6-67ce-44a5-b00b-6e7db97721a8/related/\",\"unstable__sensitivity\":[]},{\"id\":\"fee9d159-9b96-49f1-90f3-a9acb978e7d2\",\"title\":\"Tulip Armchair, Model No. 150\",\"indexed_on\":\"2019-05-28T11:45:03.107587Z\",\"foreign_landing_url\":\"https://www.brooklynmuseum.org/opencollection/objects/1588\",\"url\":\"https://d1lfxha3ugu3d4.cloudfront.net/images/opencollection/objects/size4/78.128.7_view2_IMLS_SL2.jpg\",\"creator\":\"Eero Saarinen\",\"creator_url\":null,\"license\":\"by\",\"license_version\":\"3.0\",\"license_url\":\"https://creativecommons.org/licenses/by/3.0/\",\"provider\":\"brooklynmuseum\",\"source\":\"brooklynmuseum\",\"category\":\"digitized_artwork\",\"filesize\":null,\"filetype\":\"jpg\",\"tags\":[{\"name\":\"20th Century\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Atomic Age design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"born Finland\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"chair\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"decor\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"elegant\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"fiberglass\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"furnishing\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Furniture\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"home\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"IMLS\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"industrial design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"interior design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"new york\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"post-war design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"red\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Saarinen\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"seating\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Tulip chair\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"white\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"}],\"attribution\":\"\\\"Tulip Armchair, Model No. 150\\\" by Eero Saarinen is licensed under CC BY 3.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/3.0/.\",\"fields_matched\":[\"description\",\"title\",\"tags.name\"],\"mature\":false,\"height\":1536,\"width\":1228,\"thumbnail\":\"https://api.openverse.org/v1/images/fee9d159-9b96-49f1-90f3-a9acb978e7d2/thumb/\",\"detail_url\":\"https://api.openverse.org/v1/images/fee9d159-9b96-49f1-90f3-a9acb978e7d2/\",\"related_url\":\"https://api.openverse.org/v1/images/fee9d159-9b96-49f1-90f3-a9acb978e7d2/related/\",\"unstable__sensitivity\":[]},{\"id\":\"13b2388b-100a-4d3f-b3fd-670095b00ed3\",\"title\":\"Tulip Armchair, Model No. 150\",\"indexed_on\":\"2019-05-28T11:45:03.107587Z\",\"foreign_landing_url\":\"https://www.brooklynmuseum.org/opencollection/objects/1588\",\"url\":\"https://d1lfxha3ugu3d4.cloudfront.net/images/opencollection/objects/size4/78.128.7_view3_IMLS_SL2.jpg\",\"creator\":\"Eero Saarinen\",\"creator_url\":null,\"license\":\"by\",\"license_version\":\"3.0\",\"license_url\":\"https://creativecommons.org/licenses/by/3.0/\",\"provider\":\"brooklynmuseum\",\"source\":\"brooklynmuseum\",\"category\":\"digitized_artwork\",\"filesize\":null,\"filetype\":\"jpg\",\"tags\":[{\"name\":\"Saarinen\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"seating\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Tulip chair\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"20th Century\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"elegant\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"furnishing\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"home\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"chair\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"decor\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"fiberglass\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"interior design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Atomic Age design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"new york\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"born Finland\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"white\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"IMLS\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"red\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Furniture\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"industrial design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"post-war design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"}],\"attribution\":\"\\\"Tulip Armchair, Model No. 150\\\" by Eero Saarinen is licensed under CC BY 3.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/3.0/.\",\"fields_matched\":[\"description\",\"title\",\"tags.name\"],\"mature\":false,\"height\":1536,\"width\":1246,\"thumbnail\":\"https://api.openverse.org/v1/images/13b2388b-100a-4d3f-b3fd-670095b00ed3/thumb/\",\"detail_url\":\"https://api.openverse.org/v1/images/13b2388b-100a-4d3f-b3fd-670095b00ed3/\",\"related_url\":\"https://api.openverse.org/v1/images/13b2388b-100a-4d3f-b3fd-670095b00ed3/related/\",\"unstable__sensitivity\":[]},{\"id\":\"1afb3ee4-b366-43d7-ab65-bd1143b73948\",\"title\":\"Tulip Armchair, Model No. 150\",\"indexed_on\":\"2019-05-28T11:45:03.107587Z\",\"foreign_landing_url\":\"https://www.brooklynmuseum.org/opencollection/objects/1588\",\"url\":\"https://d1lfxha3ugu3d4.cloudfront.net/images/opencollection/objects/size4/78.128.7_bw.jpg\",\"creator\":\"Eero Saarinen\",\"creator_url\":null,\"license\":\"by\",\"license_version\":\"3.0\",\"license_url\":\"https://creativecommons.org/licenses/by/3.0/\",\"provider\":\"brooklynmuseum\",\"source\":\"brooklynmuseum\",\"category\":\"digitized_artwork\",\"filesize\":null,\"filetype\":\"jpg\",\"tags\":[{\"name\":\"Saarinen\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"seating\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Tulip chair\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"20th Century\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"elegant\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"furnishing\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"home\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"chair\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"decor\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"fiberglass\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"interior design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Atomic Age design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"new york\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"born Finland\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"white\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"IMLS\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"red\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Furniture\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"industrial design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"post-war design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"}],\"attribution\":\"\\\"Tulip Armchair, Model No. 150\\\" by Eero Saarinen is licensed under CC BY 3.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/3.0/.\",\"fields_matched\":[\"description\",\"title\",\"tags.name\"],\"mature\":false,\"height\":1536,\"width\":1186,\"thumbnail\":\"https://api.openverse.org/v1/images/1afb3ee4-b366-43d7-ab65-bd1143b73948/thumb/\",\"detail_url\":\"https://api.openverse.org/v1/images/1afb3ee4-b366-43d7-ab65-bd1143b73948/\",\"related_url\":\"https://api.openverse.org/v1/images/1afb3ee4-b366-43d7-ab65-bd1143b73948/related/\",\"unstable__sensitivity\":[]},{\"id\":\"73fb8c84-7df0-4263-a38c-f622ec2e4478\",\"title\":\"'Grasshopper' Highback Armchair\",\"indexed_on\":\"2019-05-28T11:45:03.107587Z\",\"foreign_landing_url\":\"https://www.brooklynmuseum.org/opencollection/objects/1586\",\"url\":\"https://d1lfxha3ugu3d4.cloudfront.net/images/opencollection/objects/size4/78.2_bw.jpg\",\"creator\":\"Eero Saarinen\",\"creator_url\":null,\"license\":\"by\",\"license_version\":\"3.0\",\"license_url\":\"https://creativecommons.org/licenses/by/3.0/\",\"provider\":\"brooklynmuseum\",\"source\":\"brooklynmuseum\",\"category\":\"digitized_artwork\",\"filesize\":null,\"filetype\":\"jpg\",\"tags\":[{\"name\":\"20th century design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"American Modern\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"arm chair\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Atomic Age design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"black\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"decor\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"decorative\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"furnishing\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"furniture\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"home\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"iconic designer\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"industrial design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"interior design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"mid-century Modern\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"minimalist\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"Modernism\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"post-war design\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"seating\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"},{\"name\":\"wood\",\"accuracy\":null,\"unstable__provider\":\"brooklynmuseum\"}],\"attribution\":\"\\\"'Grasshopper' Highback Armchair\\\" by Eero Saarinen is licensed under CC BY 3.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/3.0/.\",\"fields_matched\":[\"title\",\"tags.name\"],\"mature\":false,\"height\":1536,\"width\":1205,\"thumbnail\":\"https://api.openverse.org/v1/images/73fb8c84-7df0-4263-a38c-f622ec2e4478/thumb/\",\"detail_url\":\"https://api.openverse.org/v1/images/73fb8c84-7df0-4263-a38c-f622ec2e4478/\",\"related_url\":\"https://api.openverse.org/v1/images/73fb8c84-7df0-4263-a38c-f622ec2e4478/related/\",\"unstable__sensitivity\":[\"sensitive_text\"]}]}",
+    "license": "by",
+    "license_version": "3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "foreign_landing_url": "https://www.brooklynmuseum.org/opencollection/objects/1586",
+    "source": "brooklynmuseum"
+  },
+  "product-4": {
+    "src": "assets/img/product-4.jpg",
+    "title": "White and black mattress fronting the mountain - Credit to https://homegets.com/",
+    "creator": "homegets.com",
+    "creator_url": "https://www.flickr.com/photos/141436406@N04",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/141436406@N04/49272934281",
+    "source": "flickr"
+  },
+  "product-6": {
+    "src": "assets/img/product-6.jpg",
+    "title": "File:Winnipeg (6387131115).jpg",
+    "creator": "Herb Neufeld",
+    "creator_url": "https://www.flickr.com/people/13085946@N02",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=66245813",
+    "source": "wikimedia"
+  },
+  "product-5": {
+    "src": "assets/img/product-5.jpg",
+    "title": "Day One Hundred and Sixty - New Bookcase",
+    "creator": "Yortw",
+    "creator_url": "https://www.flickr.com/photos/52293377@N03",
+    "license": "by",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "foreign_landing_url": "https://www.flickr.com/photos/52293377@N03/5827857155",
+    "source": "flickr"
+  },
+  "gallery-1": {
+    "src": "assets/img/gallery-1.jpg",
+    "title": "TV-009-0526 (15817628308)",
+    "creator": "André Carrotflower",
+    "creator_url": "https://www.flickr.com/people/59639129@N08",
+    "license": "by-sa",
+    "license_version": "2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "foreign_landing_url": "https://commons.wikimedia.org/w/index.php?curid=91280127",
+    "source": "wikimedia"
+  },
+  "gallery-2": {
+    "src": "assets/img/gallery-2.jpg",
+    "title": "Interior Design",
+    "creator": "Dahl House Design",
+    "creator_url": "https://iicd-runa.org",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://stocksnap.io/photo/interior-design-D0NOMANBA7",
+    "source": "stocksnap"
+  },
+  "gallery-3": {
+    "src": "assets/img/gallery-3.jpeg",
+    "title": "A cozy bedroom with a neatly made bed, colorful pillows, a textured headboard, bedside lamp, and a modern wooden bookshelf.",
+    "creator": "Pritam Sonone",
+    "creator_url": "https://www.digitalpritam.in",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://wordpress.org/photos/photo/1276a00258/",
+    "source": "wordpress"
+  },
+  "gallery-4": {
+    "src": "assets/img/gallery-4.jpg",
+    "title": "Dining room furniture",
+    "creator": "Kelly Ishmael",
+    "creator_url": "https://mindingmynest.com",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.rawpixel.com/image/6042962/photo-image-public-domain-house-table",
+    "source": "rawpixel"
+  },
+  "gallery-5": {
+    "src": "assets/img/gallery-5.jpg",
+    "title": "bedroom lamp, sofa, bed, desk",
+    "creator": "Mike Birdy",
+    "creator_url": "https://stocksnap.io/author/29629",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.rawpixel.com/image/3336812/free-photo-image-bedroom-dorm-room",
+    "source": "rawpixel"
+  },
+  "gallery-6": {
+    "src": "assets/img/gallery-6.jpg",
+    "title": "{\"result_count\":1,\"page_count\":1,\"page_size\":6,\"page\":1,\"results\":[{\"id\":\"eea72af7-e30b-4abf-ba78-6e3056957b57\",\"title\":null,\"indexed_on\":\"2024-03-29T01:59:00.599666Z\",\"foreign_landing_url\":\"https://www.rawpixel.com/image/5949527/free-public-domain-cc0-photo\",\"url\":\"https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg2MDM3MTgtaW1hZ2Uta3d5cDVzZmMuanBn.jpg\",\"creator\":null,\"creator_url\":null,\"license\":\"cc0\",\"license_version\":\"1.0\",\"license_url\":\"https://creativecommons.org/publicdomain/zero/1.0/\",\"provider\":\"rawpixel\",\"source\":\"rawpixel\",\"category\":null,\"filesize\":null,\"filetype\":\"jpg\",\"tags\":[{\"name\":\"beach\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"beauty room design\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"cozy home\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"massages room\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"pedicure\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"red living room interior design\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"spa\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"wood\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"}],\"attribution\":\"This work is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.\",\"fields_matched\":[\"tags.name\"],\"mature\":false,\"height\":1365,\"width\":2048,\"thumbnail\":\"https://api.openverse.org/v1/images/eea72af7-e30b-4abf-ba78-6e3056957b57/thumb/\",\"detail_url\":\"https://api.openverse.org/v1/images/eea72af7-e30b-4abf-ba78-6e3056957b57/\",\"related_url\":\"https://api.openverse.org/v1/images/eea72af7-e30b-4abf-ba78-6e3056957b57/related/\",\"unstable__sensitivity\":[]}]}",
+    "creator": "{\"result_count\":1,\"page_count\":1,\"page_size\":6,\"page\":1,\"results\":[{\"id\":\"eea72af7-e30b-4abf-ba78-6e3056957b57\",\"title\":null,\"indexed_on\":\"2024-03-29T01:59:00.599666Z\",\"foreign_landing_url\":\"https://www.rawpixel.com/image/5949527/free-public-domain-cc0-photo\",\"url\":\"https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg2MDM3MTgtaW1hZ2Uta3d5cDVzZmMuanBn.jpg\",\"creator\":null,\"creator_url\":null,\"license\":\"cc0\",\"license_version\":\"1.0\",\"license_url\":\"https://creativecommons.org/publicdomain/zero/1.0/\",\"provider\":\"rawpixel\",\"source\":\"rawpixel\",\"category\":null,\"filesize\":null,\"filetype\":\"jpg\",\"tags\":[{\"name\":\"beach\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"beauty room design\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"cozy home\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"massages room\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"pedicure\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"red living room interior design\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"spa\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"wood\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"}],\"attribution\":\"This work is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.\",\"fields_matched\":[\"tags.name\"],\"mature\":false,\"height\":1365,\"width\":2048,\"thumbnail\":\"https://api.openverse.org/v1/images/eea72af7-e30b-4abf-ba78-6e3056957b57/thumb/\",\"detail_url\":\"https://api.openverse.org/v1/images/eea72af7-e30b-4abf-ba78-6e3056957b57/\",\"related_url\":\"https://api.openverse.org/v1/images/eea72af7-e30b-4abf-ba78-6e3056957b57/related/\",\"unstable__sensitivity\":[]}]}",
+    "creator_url": "{\"result_count\":1,\"page_count\":1,\"page_size\":6,\"page\":1,\"results\":[{\"id\":\"eea72af7-e30b-4abf-ba78-6e3056957b57\",\"title\":null,\"indexed_on\":\"2024-03-29T01:59:00.599666Z\",\"foreign_landing_url\":\"https://www.rawpixel.com/image/5949527/free-public-domain-cc0-photo\",\"url\":\"https://images.rawpixel.com/editor_1024/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcHg2MDM3MTgtaW1hZ2Uta3d5cDVzZmMuanBn.jpg\",\"creator\":null,\"creator_url\":null,\"license\":\"cc0\",\"license_version\":\"1.0\",\"license_url\":\"https://creativecommons.org/publicdomain/zero/1.0/\",\"provider\":\"rawpixel\",\"source\":\"rawpixel\",\"category\":null,\"filesize\":null,\"filetype\":\"jpg\",\"tags\":[{\"name\":\"beach\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"beauty room design\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"cozy home\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"massages room\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"pedicure\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"red living room interior design\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"spa\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"},{\"name\":\"wood\",\"accuracy\":null,\"unstable__provider\":\"rawpixel\"}],\"attribution\":\"This work is marked with CC0 1.0. To view the terms, visit https://creativecommons.org/publicdomain/zero/1.0/.\",\"fields_matched\":[\"tags.name\"],\"mature\":false,\"height\":1365,\"width\":2048,\"thumbnail\":\"https://api.openverse.org/v1/images/eea72af7-e30b-4abf-ba78-6e3056957b57/thumb/\",\"detail_url\":\"https://api.openverse.org/v1/images/eea72af7-e30b-4abf-ba78-6e3056957b57/\",\"related_url\":\"https://api.openverse.org/v1/images/eea72af7-e30b-4abf-ba78-6e3056957b57/related/\",\"unstable__sensitivity\":[]}]}",
+    "license": "cc0",
+    "license_version": "1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "foreign_landing_url": "https://www.rawpixel.com/image/5949527/free-public-domain-cc0-photo",
+    "source": "rawpixel"
+  }
+}

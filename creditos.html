@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Créditos fotográficos · Roble &amp; Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="styles.css?v=20260601">
+  <style>
+    .credits-page { padding: calc(var(--nav-h) + 3rem) 0 5rem; }
+    .credits-page h1 { font-size: clamp(2rem,4vw,3rem); margin-bottom: .5rem; }
+    .credits-page .lead { color: var(--ink-mute); margin-bottom: 3rem; max-width: 60ch; }
+    .credits-list { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+    .credits-list li {
+      padding: 1.25rem 1.5rem;
+      background: var(--bg-2);
+      border-radius: 12px;
+      font-size: .875rem;
+      color: var(--ink-soft);
+      line-height: 1.6;
+    }
+    .credits-list strong { color: var(--ink); }
+    .credits-list a { color: var(--brown); text-decoration: underline; text-underline-offset: 3px; }
+    .credits-list a:hover { color: var(--ink); }
+    .back-link { display:inline-flex; align-items:center; gap:.5rem; color:var(--brown); font-weight:500; margin-bottom:2.5rem; transition:gap .3s; }
+    .back-link:hover { gap:.875rem; }
+  </style>
+</head>
+<body>
+  <header class="nav is-scrolled" id="nav" role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Roble &amp; Co. — Inicio">
+        <span class="nav-logo-mark">R</span>
+        <span class="nav-logo-text">Roble <em>&amp;</em> Co.</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="credits-page">
+    <div class="container">
+      <a href="index.html" class="back-link">← Volver a inicio</a>
+      <h1 class="section-title">Créditos <em>fotográficos</em></h1>
+      <p class="lead">Imágenes bajo licencias Creative Commons vía <a href="https://openverse.org" target="_blank" rel="noopener">Openverse</a>. Agradecemos a todos los autores su contribución.</p>
+      <ul class="credits-list" data-credits>
+        <li>Cargando créditos…</li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var list = document.querySelector("[data-credits]");
+      if (!list) return;
+      fetch("assets/credits.json")
+        .then(function (r) { return r.json(); })
+        .then(function (credits) {
+          var entries = Object.entries(credits);
+          if (!entries.length) { list.innerHTML = "<li>No hay créditos registrados.</li>"; return; }
+          list.innerHTML = entries.map(function (entry) {
+            var id = entry[0], c = entry[1];
+            var creator = c.creator_url
+              ? '<a href="' + c.creator_url + '" target="_blank" rel="noopener">' + (c.creator || "Autor desconocido") + "</a>"
+              : (c.creator || "Autor desconocido");
+            var license = c.license_url
+              ? '<a href="' + c.license_url + '" target="_blank" rel="noopener">' + (c.license || "").toUpperCase() + " " + (c.license_version || "") + "</a>"
+              : ((c.license || "").toUpperCase());
+            var original = c.foreign_landing_url
+              ? ' · <a href="' + c.foreign_landing_url + '" target="_blank" rel="noopener">Ver original ↗</a>'
+              : "";
+            return "<li><strong>" + (c.title || "Sin título") + "</strong> de " + creator +
+              " (" + (c.source || "desconocido") + ") · " + license + original + "</li>";
+          }).join("");
+        })
+        .catch(function () {
+          list.innerHTML = "<li>No se pudieron cargar los créditos. Abre este archivo desde un servidor HTTP.</li>";
+        });
+    })();
+  </script>
+</body>
+</html>
